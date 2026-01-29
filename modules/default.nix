@@ -20,15 +20,15 @@
     in {
       file = {
         "${config.xdg.configHome}/steamtinkerlaunch/proton/custom/${displayName}" = {
-          recursive = true;
+          recursive = false;
           source = GE-Proton10-29-Package;
         };
         "${config.xdg.configHome}/heroic/tools/proton/${displayName}" = {
-          recursive = true;
+          recursive = false;
           source = GE-Proton10-29-Package;
         };
         "${config.xdg.dataHome}/lutris/runners/proton/${displayName}" = {
-          recursive = true;
+          recursive = false;
           source = GE-Proton10-29-Package;
         };
       };
