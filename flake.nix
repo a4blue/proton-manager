@@ -22,8 +22,17 @@
 
     formatter.x86_64-linux = pkgs.alejandra;
 
+    packages.${system} =
+      import ./packages/build-proton-GE-versions.nix {
+        lib = pkgs.lib;
+        callPackage = pkgs.callPackage;
+      }
+      // {
+        doc = pkgs.callPackage ./lib/options-doc.nix {};
+      };
+
     checks.${system}.default = pkgs.testers.nixosTest {
-      name = "Basic Check";
+      name = "Basic Module Check";
       nodes.machine = {
         imports = [inputs.home-manager.nixosModules.home-manager];
 
@@ -33,7 +42,7 @@
         };
         home-manager.sharedModules = [self.homeModules.proton-manager];
         home-manager.users.fake = {
-          programs.protonManager.GE-Proton10-29 = true;
+          protonManager.Proton-Manager-GE-Proton10-29 = true;
           home.stateVersion = "25.11";
         };
       };

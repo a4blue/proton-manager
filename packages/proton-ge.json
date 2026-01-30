@@ -1,0 +1,22 @@
+[
+    {
+        "displayName":"Proton-Manager-GE-Proton-Latest",
+        "version":"GE-Proton10-29",
+        "hash":"sha256-ATtKLEKA+r557FVnBoW/iYrRR4Ki9G8rjlV4+2rki0I="
+    },
+    {
+        "displayName":"Proton-Manager-GE-Proton10-29",
+        "version":"GE-Proton10-29",
+        "hash":"sha256-ATtKLEKA+r557FVnBoW/iYrRR4Ki9G8rjlV4+2rki0I="
+    },
+    {
+        "displayName":"Proton-Manager-GE-Proton10-28",
+        "version":"GE-Proton10-28",
+        "hash":"sha256-6NvSGX8445la6WU6z9UaaKJm30eg094cuTyhHVDjbOo="
+    },
+    {
+        "displayName":"Proton-Manager-GE-Proton9-27",
+        "version":"GE-Proton9-27",
+        "hash":"sha256-70au1dx9co3X+X7xkBCDGf1BxEouuw3zN+7eDyT7i5c="
+    }
+]
