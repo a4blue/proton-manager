@@ -42,7 +42,7 @@
         };
         home-manager.sharedModules = [self.homeModules.proton-manager];
         home-manager.users.fake = {
-          protonManager.Proton-Manager-GE-Proton10-29 = true;
+          protonManager.Proton-Manager-GE-Proton10-32 = true;
           home.stateVersion = "25.11";
         };
       };
@@ -53,9 +53,9 @@
         machine.wait_for_unit("nix-daemon.socket")
 
         # Run tests:
-        machine.succeed("test -e /home/fake/.config/steamtinkerlaunch/proton/custom/Proton-Manager-GE-Proton10-29")
-        machine.succeed("test -e /home/fake/.config/heroic/tools/proton/Proton-Manager-GE-Proton10-29")
-        machine.succeed("test -e /home/fake/.local/share/lutris/runners/proton/Proton-Manager-GE-Proton10-29")
+        machine.succeed("test -e /home/fake/.config/steamtinkerlaunch/proton/custom/Proton-Manager-GE-Proton10-32")
+        machine.succeed("test -e /home/fake/.config/heroic/tools/proton/Proton-Manager-GE-Proton10-32")
+        machine.succeed("test -e /home/fake/.local/share/lutris/runners/proton/Proton-Manager-GE-Proton10-32")
       '';
     };
   };
